@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建表单2</title>
+</head>
+<body>
+<form method="">
+    <input>
+    <input type=button value="按钮">
+    <button >按钮</button><!--与js合作并且作为绑定事件的-->
+    <input type="submit" value="提交"><!--submit提交表单-->
+
+    <input type="range" min="-100" max="100" step="100" ><!--range是划表的形式-->
+    <input type="range" min="-100" max="100" step="100" value="-100">
+    <input type="number" min="-100" max="100" value="0"><!--number上下调节的,可以用在年月日上-->
+    <input type="checkbox">选择1
+    <input type="radio">选择2
+
+    性别 <!--三选一-->
+    <input type="radio" name="a" checked>男 <!--加checked是会必须有一个提交上去-->
+    <input type="radio"  name="a">女
+    <input type="radio"  name="a">都行
+
+    你最喜欢的水果是
+    <select>
+        <option>橘子</option>
+        <option>樱桃</option>
+        <option>椰子</option>
+    </select>
+
+<!--    datalist得配合单行文本框使用-->
+    <input type="text" list="datalist1"><!--把文本引导到datalist的ID里-->
+    <datalist id="datalist1">
+        <option>橘子</option>
+        <option>樱桃</option>
+        <option>椰子</option>
+    </datalist>
+</form>
+</body>
+</html>
